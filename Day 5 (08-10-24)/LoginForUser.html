@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block head %}
+{% endblock %}
+
+{% block body %}
+<div id="main">
+<form method = "POST" action = "/Login">
+<label for="ID" id="userId">ID:</label>
+<input type="number" placeholder="id" name="userId" class="id"></input>
+<br>
+<br>
+
+<label for="name" id="name">Name:</label> 
+<input type="text" placeholder="name" name="name" class="id"></input>
+
+<br>
+<br>
+
+<label for="radioBtn">Are you Premium Member ?</label>
+<input type="radio" value ="1" name ="radioBtn">yes</input>
+<input type="radio"  value = "0" name="radioBtn">no</input>
+<br>
+<br>
+
+<button type="submit">submit</button>
+
+</form>
+</div>
+
+
+
+{% endblock %}
